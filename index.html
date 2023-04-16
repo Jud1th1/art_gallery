@@ -9,11 +9,32 @@
   <title>Art Gallery Website - correlucas</title>
 
   <link rel="icon" href="./assets/favicon-32x32.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <main>
+     <!-- navbar -->
+     <nav>
+      <div class="nav-center">
+        <!-- nav header-->
+        <div class="nav-header">
+            <button class="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <!-- links -->
+        <div class="links">
+          <a href="#calendar">Calendar</a>
+          <a href="#mission">Mission</a>
+          <a href="#visit">Visit</a>
+        </div>
+      </div>
+    </nav>
 
     <header>
       <img class="hero-image-mobile" src="./assets/mobile/image-hero@2x.jpg" alt="Art Gallery Picture">
@@ -32,7 +53,7 @@
       </div>
     </header>
 
-    <article class="container">
+    <article class="container" id="visit">
 
       <div class="grid">
         <div class="top-feature-left">
@@ -71,7 +92,25 @@
   <footer>
 
 
+  <!-- Mission -->
+    <div class="mission_container" id="mission">
+        <h2 class="heading-m white">Our Mission</h2>
+        <p class="body-m-white">The mission of the Modern Art Gallery is to inspire creativity and heighten creative curiosity by connecting people with art from today’s artists.</p>
+        <button>Learn More</button>
+    </div>
 
+   <!-- Calendar -->
+   <div class="calendar_container" id="calendar">
+      
+   </div>
+
+  <!-- Features-->
+  <div class="features_container">
+        
+  </div>
+
+
+  <!--Footer-->
     <div class="container flex">
 
       <img class="logo" src="./assets/logo-light.svg" alt="">
