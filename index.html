@@ -6,65 +6,107 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-  <title>Art Gallery Website - correlucas</title>
+  <title>Art Gallery Website</title>
 
   <link rel="icon" href="./assets/favicon-32x32.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8bc929afbc.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./style.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <main>
-     <!-- navbar -->
-     <nav>
-      <div class="nav-center">
-        <!-- nav header-->
-        <div class="nav-header">
-            <button class="nav-toggle">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </div>
-        <!-- links -->
-        <div class="links">
-          <a href="#calendar">Calendar</a>
-          <a href="#mission">Mission</a>
-          <a href="#visit">Visit</a>
-        </div>
+  <!-- navbar -->
+  <nav>
+    <div class="nav-center">
+      <!-- nav header-->
+      <div class="nav-header">
+          <!--May not need this:-->
+          <button class="nav-toggle">
+              <i class="fa-solid fa-bars"></i>
+          </button>
       </div>
-    </nav>
+      <!-- links -->
+      <div class="links">
+        <a href="#events">Events</a>
+        <a href="#mission">Mission</a>
+        <a href="#donate">Join/Donate</a>
+        <a href="#exhibits">Exhibits</a>
+      </div>
+    </div>
+  </nav>
 
-    <header>
-      <img class="hero-image-mobile" src="./assets/mobile/image-hero@2x.jpg" alt="Art Gallery Picture">
-      <div class="container">
+  <header>
+    <img class="hero-image-mobile" src="./assets/mobile/image-hero@2x.jpg" alt="Art Gallery Picture">
+    <div class="container">
 
-        <div class="hero-section">
-          <h1 class="heading-xl h1-heading">Modern Art Gallery</h1>
-          <div class="hero-text">
-            <p class="body-m hero-paragraph pb-64">The arts in the collection of the <span>Modern Art Gallery</span> all started from a spark of inspiration. Will these pieces inspire you? <span>Visit us and find out.</span></p>
-            <div class="btn">
-              <a class="btn-link" href="./location.html"> Our Location</a>
-              <a class="arrow-right" href="./location.html"><img src="./assets/icon-arrow-right.svg" alt="Arrow Button"></a>
-            </div>
+      <div class="hero-section">
+        <h1 class="heading-xl h1-heading">Modern Art Gallery</h1>
+        <div class="hero-text">
+          <p class="body-m hero-paragraph pb-64">The arts in the collection of the <span>Modern Art Gallery</span> all started from a spark of inspiration. Will these pieces inspire you? <span>Visit us and find out.</span></p>
+          <div class="btn">
+            <a class="btn-link" href="./location.html"> Location</a>
+            <a class="arrow-right" href="./location.html"><img src="./assets/icon-arrow-right.svg" alt="Arrow Button"></a>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <article class="container" id="visit">
+  <main>
+  <!--Container for the exhibits-->
+  <section class="container_exhibits" id="exhibits">
+    <div class="exhibit">
+    <h2 class="heading-m">Now on View</h2>
+    <p class="body-m">Explore exhibition gallery guides, videos, articles, and more.</p>
+    <p class="body-m">We’re excited to welcome you to our gallery and see how our collections influence you!</p>
+    </div>
+
+    <div class="exhibit_parent">
+      <div class="card">
+        <img src="images/gray-lady.jpg" alt="" class="image">
+        <div class="exhibit_text">
+        <h2 class="exhibit-m">The Gray Lady Commission</h2>
+        <h3 class="exhibit-s">Through May 30th</h3>
+      </div>
+    </div>
+
+      <div class="card">
+        <img src="images/floating-chairs.jpg" alt="" class="image">
+        <div class="exhibit_text">
+        <h2 class="exhibit-m">Defying Gravity: E.T </h2>
+        <h3 class="exhibit-s">Through July 17th</h3>
+      </div>
+      </div>
+
+      <div class="card">
+        <img src="images/boss-ross.jpg" alt="" class="image">
+        <div class="exhibit_text">
+        <h2 class="exhibit-m">In Praise of Painting: Inspired By Bob Ross</h2>
+        <h3 class="exhibit-s">Ongoing</h3>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+     <!--Container for the donations-->
+    <article class="container" id="donate">
 
       <div class="grid">
         <div class="top-feature-left">
-          <h2 class="heading-m">Your Day At The Gallery</h2>
-          <p class="body-m">Wander through our distinct collections and find new about our artists. Dive into the details of their creative process.</p>
+          <h2 class="heading-m">Join & Be Inspired</h2>
+          <p class="body-m">Membership at The MAG offers a rich variety of benefits that give you a deeper connection with the art in our galleries. From Member Preview Days for new exhibitions to Artist Reviews by fellow local artists. JOIN FOR FREE!</p>
+          <a class="dm-link" href="#">Click here to Join</a>
         </div>
 
         <picture class="top-feature-right">
-          <source media="(max-width:540px)" srcset="./assets/mobile/image-grid-1@2x.jpg">
-          <source media="(max-width:800px)" srcset="./assets/tablet/image-grid-1@2x.jpg">
-          <img src="./assets/desktop/image-grid-1@2x.jpg" alt="Art Gallery Exposition">
+          <source media="(max-width:540px)" srcset="./images/blue-dog.jpg">
+          <source media="(max-width:800px)" srcset="./images/blue-dogresize.jpg">
+          <img src="/images/blue-dog.jpg" alt="Art Gallery Dog">
         </picture>
 
         <picture class="left-feature">
@@ -75,41 +117,62 @@
 
         <picture class="right-feature-1">
           <source media="(max-width:540px)" srcset="./assets/mobile/image-grid-3@2x.jpg">
-          <source media="(max-width:800px)" srcset="./assets/tablet/image-grid-3@2x.jpg">
-          <img src="./assets/desktop/image-grid-3@2x.jpg" alt="Art Gallery People">
+          <source media="(max-width:800px)" srcset="./images/Orange-wall.jpg">
+          <img src="images/gallerypic2.jpg" alt="Art Gallery People">
         </picture>
 
         <div class="right-feature-2">
-          <h2 class="heading-m white">Come & Be Inspired</h2>
-          <p class="body-m-white">We’re excited to welcome you to our gallery and see how our collections influence you.</p>
+          <h2 class="heading-m white">Donate</h2>
+          <p class="body-m-white">Your support helps sustain the Museum’s extraordinary level of conservation and research, enabling millions of visitors to experience the power of art.
+            Your donation today plays a vital role in The MAG's future, and we couldn’t be more grateful. Thank you.</p>
+          <a class="dm-link" href="#">Click here to Donate</a>
         </div>
       </div>
 
     </article>
 
-  </main>
-
-  <footer>
-
-
   <!-- Mission -->
     <div class="mission_container" id="mission">
         <h2 class="heading-m white">Our Mission</h2>
+        <br>
         <p class="body-m-white">The mission of the Modern Art Gallery is to inspire creativity and heighten creative curiosity by connecting people with art from today’s artists.</p>
         <button>Learn More</button>
     </div>
 
-   <!-- Calendar -->
-   <div class="calendar_container" id="calendar">
-      
+   <!-- Events -->
+   <div class="events_container" id="events">
+      <!--Event 1-->
+      <div class="event1">
+      <div class="events-image">
+        <img src="images/painter1.jpg" class="event-img" alt="">
+      </div>  
+      <div class="events-promo">
+        <div class="event-promo-text">
+          <h2 class="heading-m">An Evening with Monet Manet</h2>
+          <p class="event-text">Join the artist M&M, Friday April 28th, as they speak on their artistic practice.</p>
+          <a href="#" class="eve-link">Register Now</a>
+        </div>
+      </div>
+      </div>
+
+      <!--Event 2-->
+      <div class="event2">
+      <div class="events-promo">
+        <div class="event-promo-text">
+          <h2 class="heading-m">The Social Scene</h2>
+          <p class="event-text">Join us every Friday and Saturday night! Enjoy live music, drinks, and gallery chats.</p>
+          <a href="#" class="eve-link">Plan Your Visit</a>
+        </div>
+      </div>
+      <div class="events-image">
+        <img src="images/group-hang.jpg" class="event-img" alt="">
+      </div> 
+      </div>
    </div>
 
-  <!-- Features-->
-  <div class="features_container">
-        
-  </div>
+  </main>
 
-
+   <footer>
   <!--Footer-->
     <div class="container flex">
 
@@ -145,6 +208,28 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+      
   </footer>
 </body>
 
